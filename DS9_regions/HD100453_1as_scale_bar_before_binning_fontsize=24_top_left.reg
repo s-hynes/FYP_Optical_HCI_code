@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+# Region file format: DS9 version 4.1
+global color=white dashlist=8 3 width=2 font="helvetica 24 bold roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+physical
+# composite(199.2963,412,0) || composite=1 color=white width=3
+line(50.5,432, 328.27778,432) || # line=0 0 color=white width=3 font="helvetica 24 bold roman" fixed=1
+# text(189,462) || color=white font="helvetica 24 bold roman" text={1 as}
+# text(189,402) color=white font="helvetica 24 bold roman" text={104 AU}
+=======
+# Region file format: DS9 version 4.1
+global color=white dashlist=8 3 width=2 font="helvetica 24 bold roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+physical
+# composite(199.2963,412,0) || composite=1 color=white width=3
+line(50.5,432, 328.27778,432) || # line=0 0 color=white width=3 font="helvetica 24 bold roman" fixed=1
+# text(189,462) || color=white font="helvetica 24 bold roman" text={1 as}
+# text(189,402) color=white font="helvetica 24 bold roman" text={104 AU}
+>>>>>>> origin

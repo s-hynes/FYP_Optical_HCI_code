@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+# Region file format: DS9 version 4.1
+global color=green dashlist=8 3 width=1 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+physical
+=======
+# Region file format: DS9 version 4.1
+global color=green dashlist=8 3 width=1 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+physical
+>>>>>>> origin
+polygon(478.83706,555.976,485.6203,558.88311,504.51645,560.65967,516.46786,560.65967,530.84186,559.85214,541.68804,554.73508,542.47026,540.63297,541.82424,536.11082,540.53219,532.88071,536.69048,531.99691,532.29541,535.78781,525.83519,535.94931,520.52529,534.33404,515.16412,541.67406,502.25537,543.37857,494.98762,541.279,488.36589,537.56437,481.58266,539.50244,476.899,544.99362,475.92996,550.0003)
