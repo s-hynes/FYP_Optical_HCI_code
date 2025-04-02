@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """Here I'm practicing slicing Numpy arrays and deleting elements from those arrays"""
 
 import numpy as np
@@ -45,51 +44,3 @@ print(arr)
 print()
 print("\n",arr[206:-306])
 #print(arr[-25:].shape)
-=======
-"""Here I'm practicing slicing Numpy arrays and deleting elements from those arrays"""
-
-import numpy as np
-
-#arr = np.array( [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-#print(arr[5:])
-
-#arr = np.array( [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
-#print(arr[0:2, 1:4])
-
-arr_3d = np.array( [    [[0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0], 
-                        [0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0]],
-
-                        [[0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0], 
-                        [0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0]],
-                        
-                        [[0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0], 
-                        [0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0]],
-                        
-                        [[0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0], 
-                        [0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 1, 0, 0]] ])
-
-""" arr = arr_3d[0]
-print(arr)
-
-bar = arr[ ::, 4:7]
-print(bar)
-
-no_bar = np.delete(arr, [4,5,6], axis=1)
-print(no_bar) """
-
-#print(arr_3d)
-
-#bar_3d = arr_3d[:, :, 4:7]
-#print(bar_3d)
-
-#no_bar_3d = np.delete(arr_3d, [4,5,6], axis=2)
-#print(no_bar_3d)
-
-#-----------------------------------------------------------------------------------------------
-
-arr = np.arange(1, 1025)
-print(arr)
-print()
-print("\n",arr[206:-306])
-#print(arr[-25:].shape)
->>>>>>> origin
