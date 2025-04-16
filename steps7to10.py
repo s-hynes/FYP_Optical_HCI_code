@@ -46,10 +46,10 @@ def itsready(data_dir:str, save_dir:str, detector:str, savesteps=False):
 
 def combine(save_dir:str, Callas_image, Bartoli_image, savesteps=False):
 
-    Callas_image = Callas_image.reshape(1,512,512)
-    Bartoli_image_xflipped = np.fliplr(Bartoli_image).reshape(1,512,512)
+    Callas_image  = Callas_image.reshape(1,512,512)
+    Bartoli_image = Bartoli_image.reshape(1,512,512)
 
-    images_combined = np.average( np.append(Callas_image, Bartoli_image_xflipped, axis=0), axis=0)
+    images_combined = np.average( np.append(Callas_image, Bartoli_image, axis=0), axis=0)
 
     return images_combined
 

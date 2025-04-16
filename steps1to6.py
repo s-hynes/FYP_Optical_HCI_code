@@ -11,7 +11,7 @@ from inputs import save_fits, save_steps, saving_dir, dir_in_str
 import time
 
 def func(data_dir:str, file:str, save_dir:str, detector:str, Stokes, savesteps=False): 
-    """Placeholder terribly generic name for this function. It performs steps 1 to 6."""
+    """Placeholder terribly generic name for this function. It performs steps 1 to 6.""" 
 
     zero    = double_phase_mode(data_dir + "/" + file, detector)[0]
     pi      = double_phase_mode(data_dir + "/" + file, detector)[1]
@@ -39,10 +39,20 @@ def func(data_dir:str, file:str, save_dir:str, detector:str, Stokes, savesteps=F
     # Complete fudge here to fix the Stokes Q single difference images. When I have more time I'll work out
     # what's actually going wrong.
     if Stokes=="Qplus" or Stokes=="Qminus":
-        sing_diff_rectangular = -single_diff_pol(ord_0_centred, ord_pi_centred, ext_0_centred, ext_pi_centred)
-    if Stokes=="Uplus" or Stokes=="Uminus":
-        sing_diff_rectangular = single_diff_pol(ord_0_centred, ord_pi_centred, ext_0_centred, ext_pi_centred)
-    int_rectangular = intensity(ord_0_centred, ord_pi_centred, ext_0_centred, ext_pi_centred) 
+        if detector=="Callas":
+            sing_diff_rectangular = -single_diff_pol(ord_0_centred, ord_pi_centred, ext_0_centred, ext_pi_centred)
+        elif detector=="Bartoli":
+            sing_diff_rectangular = np.fliplr(single_diff_pol(ord_0_centred, ord_pi_centred, ext_0_centred, ext_pi_centred))
+    elif Stokes=="Uplus" or Stokes=="Uminus":
+        if detector=="Callas":
+            sing_diff_rectangular = single_diff_pol(ord_0_centred, ord_pi_centred, ext_0_centred, ext_pi_centred)
+        elif detector=="Bartoli":
+            sing_diff_rectangular = np.fliplr(-single_diff_pol(ord_0_centred, ord_pi_centred, ext_0_centred, ext_pi_centred))
+    
+    if detector=="Callas":
+        int_rectangular = intensity(ord_0_centred, ord_pi_centred, ext_0_centred, ext_pi_centred)
+    elif detector=="Bartoli":
+        int_rectangular = np.fliplr(intensity(ord_0_centred, ord_pi_centred, ext_0_centred, ext_pi_centred))
 
     #sing_diff_undithered = dedither(sing_diff_rectangular, data_dir + "/" + file)
     #int_undithered = dedither(int_rectangular, data_dir + "/" + file)

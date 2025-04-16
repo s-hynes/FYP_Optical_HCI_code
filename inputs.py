@@ -9,8 +9,8 @@ following objects:
 
 **save_fits**   - A dictionary used to specify which FITS files for intermediate steps should be saved"""
 
-dir_in_str = "C:/Users/Stephen/OneDrive - National University of Ireland, Galway/24-25 FYP/Data/ESO-Test-data"
-saving_dir = "C:/Users/Stephen/OneDrive - National University of Ireland, Galway/24-25 FYP/Data/manipulated-data/01_combining_detectors"
+dir_in_str = "C:/Users/Stephen/OneDrive - National University of Ireland, Galway/24-25 FYP/Data/GG-Tau-data"
+saving_dir = "C:/Users/Stephen/OneDrive - National University of Ireland, Galway/24-25 FYP/Data/manipulated-data/GG-Tau/01_combining_detectors"
 save_steps = True
 
 save_fits = {
@@ -34,20 +34,20 @@ save_fits = {
 "Qminus": 1,                                                            #   18
 "Uplus": 1,                                                             #   19
 "Uminus": 1,                                                            #   20
-"Qplus intensity": 1,                                                   #   21
-"Qminus intensity": 1,                                                  #   22
-"Uplus intensity": 1,                                                   #   23
-"Uminus intensity": 1,                                                  #   24
+"Qplus intensity": 0,                                                   #   21
+"Qminus intensity": 0,                                                  #   22
+"Uplus intensity": 0,                                                   #   23
+"Uminus intensity": 0,                                                  #   24
 "Q double difference": 1,                                               #   25
 "U double difference": 1,                                               #   26
-"Q intensity": 1,                                                       #   27
-"U intensity": 1,                                                       #   28
-"total intensity": 1,                                                   #   29
+"Q intensity": 0,                                                       #   27
+"U intensity": 0,                                                       #   28
+"total intensity": 0,                                                   #   29
 "polarised intensity": 1,                                               #   30
 "Q double difference average": 1,                                       #   31
 "U double difference average": 1,                                       #   32
-"Q intensity average": 1,                                               #   33
-"U intensity average": 1,                                               #   34
+"Q intensity average": 0,                                               #   33
+"U intensity average": 0,                                               #   34
 "total intensity average": 1,                                           #   35
 "polarised intensity average": 1,                                       #   36
 "Q double difference corrected for instrumental polarisation": 1,       #   37
